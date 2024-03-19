@@ -10,7 +10,6 @@ body{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    background: rgb(36,27,195);
     background: linear-gradient(90deg, rgba(36,27,195,1) 23%, rgba(74,97,102,1) 100%);
 }
 .wrap-login{
@@ -37,17 +36,26 @@ body{
     width: 500px;
     height: 500px;
     display: flex;
+    flex-direction:column;
     justify-content: center;
-    flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 1vh;
-    background-color: rgba(27, 110, 235, 0.178);
+    background-color: rgba(255, 255, 255, 0.826);
     backdrop-filter: blur(5px);
+    border-bottom-right-radius:20px ;
+    border-top-right-radius: 20px;
 }
 
 .slogan-div{
     width: 500px;
     height: 500px;
+    background-color: rgba(255, 255, 255, 0.826);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:20px ;
+    border-top-left-radius: 20px;
+
 }
 
 .slogn-style{
@@ -70,7 +78,7 @@ input::placeholder{
 }
 
 input:focus{
-    
+    box-shadow: rgba(113, 51, 157, 0.53) 0px 7px 29px 0px;
 }
 
 .key2{
@@ -80,9 +88,12 @@ input:focus{
 }
 
 .key{
+    width: 20px;
+    height: 20px;
     position: absolute;
     right: 5px;
-    top: 9px;
+    top: 12px;
+    opacity: 0.7;
 }
 
 .key:hover{
@@ -108,4 +119,21 @@ button:hover{
     opacity: 1;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.error-div{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: blueviolet;
+    gap: 1vh;
+    padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    color: #ffff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.682);
 }
